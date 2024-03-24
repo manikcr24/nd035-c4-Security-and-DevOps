@@ -1,0 +1,157 @@
+Started by user Manikanta Cheruku
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Project_4
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/manikcr24/nd035-c4-Security-and-DevOps.git
+ > git init /var/jenkins_home/workspace/Project_4 # timeout=10
+Fetching upstream changes from https://github.com/manikcr24/nd035-c4-Security-and-DevOps.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/manikcr24/nd035-c4-Security-and-DevOps.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/manikcr24/nd035-c4-Security-and-DevOps.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 3a24ae651b492a2aab97d9eb0b54c5889779aa6d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3a24ae651b492a2aab97d9eb0b54c5889779aa6d # timeout=10
+Commit message: "Project4 All Changes"
+ > git rev-list --no-walk 3a24ae651b492a2aab97d9eb0b54c5889779aa6d # timeout=10
+[Project_4] $ mvn -f starter_code/pom.xml clean compile package
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:auth-course[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding auth-course 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ war ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/jenkins_home/workspace/Project_4/starter_code/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 20 source files to /var/jenkins_home/workspace/Project_4/starter_code/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 20 source files to /var/jenkins_home/workspace/Project_4/starter_code/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/Project_4/starter_code/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 7 source files to /var/jenkins_home/workspace/Project_4/starter_code/target/test-classes
+[[1;34mINFO[m] /var/jenkins_home/workspace/Project_4/starter_code/src/test/java/com/example/demo/TestUtils.java: /var/jenkins_home/workspace/Project_4/starter_code/src/test/java/com/example/demo/TestUtils.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /var/jenkins_home/workspace/Project_4/starter_code/src/test/java/com/example/demo/TestUtils.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.example.demo.controllers.[1mOrderControllerTests[m
+11:26:15.689 [main] ERROR com.example.demo.controllers.OrderController - User not found getOrdersForUser() : manikanta
+11:26:15.736 [main] ERROR com.example.demo.controllers.OrderController - User not found submit() : manikanta
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.237 s - in com.example.demo.controllers.[1mOrderControllerTests[m
+[[1;34mINFO[m] Running com.example.demo.controllers.[1mUserControllerTests[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 s - in com.example.demo.controllers.[1mUserControllerTests[m
+[[1;34mINFO[m] Running com.example.demo.controllers.[1mItemControllerTests[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in com.example.demo.controllers.[1mItemControllerTests[m
+[[1;34mINFO[m] Running com.example.demo.controllers.[1mCartControllerTests[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.example.demo.controllers.[1mCartControllerTests[m
+[[1;34mINFO[m] Running com.example.demo.[1mSareetaApplicationTests[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+[m2024-03-24T11:26:17,792[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.boot.StartupInfoLogger[m: Starting SareetaApplicationTests on ccb89e595e1c with PID 953 (started by root in /var/jenkins_home/workspace/Project_4/starter_code)
+[m2024-03-24T11:26:17,798[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.boot.SpringApplication[m: No active profile set, falling back to default profiles: default
+[m2024-03-24T11:26:19,271[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[m: Bootstrapping Spring Data repositories in DEFAULT mode.
+[m2024-03-24T11:26:19,436[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[m: Finished Spring Data repository scanning in 150ms. Found 4 repository interfaces.
+[m2024-03-24T11:26:20,815[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[m: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8ef49dc0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[m2024-03-24T11:26:21,325[m [32mINFO  [m[[1;34mmain[m] [1;33mcom.zaxxer.hikari.HikariDataSource[m: HikariPool-1 - Starting...
+[m2024-03-24T11:26:21,698[m [32mINFO  [m[[1;34mmain[m] [1;33mcom.zaxxer.hikari.HikariDataSource[m: HikariPool-1 - Start completed.
+[m2024-03-24T11:26:21,878[m [32mINFO  [m[[1;34mmain[m] [1;33morg.hibernate.jpa.internal.util.LogHelper[m: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[m2024-03-24T11:26:22,042[m [32mINFO  [m[[1;34mmain[m] [1;33morg.hibernate.Version[m: HHH000412: Hibernate Core {5.3.10.Final}
+[m2024-03-24T11:26:22,045[m [32mINFO  [m[[1;34mmain[m] [1;33morg.hibernate.cfg.Environment[m: HHH000206: hibernate.properties not found
+Exception in thread "OkHttp Dispatcher" java.lang.NoSuchMethodError: 'com.google.gson.JsonElement com.google.gson.JsonParser.parseString(java.lang.String)'
+	at com.splunk.logging.HttpEventCollectorErrorHandler$ServerErrorException.<init>(HttpEventCollectorErrorHandler.java:56)
+	at com.splunk.logging.HttpEventCollectorSender$3.failed(HttpEventCollectorSender.java:318)
+	at com.splunk.logging.HttpEventCollectorSender$4.onFailure(HttpEventCollectorSender.java:361)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:180)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[m2024-03-24T11:26:22,482[m [32mINFO  [m[[1;34mmain[m] [1;33morg.hibernate.annotations.common.reflection.java.JavaReflectionManager[m: HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[m2024-03-24T11:26:22,770[m [32mINFO  [m[[1;34mmain[m] [1;33morg.hibernate.dialect.Dialect[m: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[m2024-03-24T11:26:24,214[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.orm.jpa.AbstractEntityManagerFactoryBean[m: Initialized JPA EntityManagerFactory for persistence unit 'default'
+[m2024-03-24T11:26:25,977[m [33mWARN  [m[[1;34mmain[m] [1;33morg.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration[m: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[m2024-03-24T11:26:26,251[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.security.web.DefaultSecurityFilterChain[m: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@193792e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@281028ce, org.springframework.security.web.header.HeaderWriterFilter@7fa2473a, org.springframework.web.filter.CorsFilter@21f9a305, org.springframework.security.web.authentication.logout.LogoutFilter@df34b01, com.example.demo.config.JWTAuthenticationFilter@6ff87203, com.example.demo.config.JWTAuthenticationVerficationFilter@aaf4375, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62b0792, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11a29c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f2a5064, org.springframework.security.web.session.SessionManagementFilter@3d67e3d3, org.springframework.security.web.access.ExceptionTranslationFilter@30cb489a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ced7cf]
+[m2024-03-24T11:26:27,144[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.scheduling.concurrent.ExecutorConfigurationSupport[m: Initializing ExecutorService 'applicationTaskExecutor'
+Exception in thread "OkHttp Dispatcher" java.lang.NoSuchMethodError: 'com.google.gson.JsonElement com.google.gson.JsonParser.parseString(java.lang.String)'
+	at com.splunk.logging.HttpEventCollectorErrorHandler$ServerErrorException.<init>(HttpEventCollectorErrorHandler.java:56)
+	at com.splunk.logging.HttpEventCollectorSender$3.failed(HttpEventCollectorSender.java:318)
+	at com.splunk.logging.HttpEventCollectorSender$4.onFailure(HttpEventCollectorSender.java:361)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:180)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[m2024-03-24T11:26:27,758[m [32mINFO  [m[[1;34mmain[m] [1;33morg.springframework.boot.StartupInfoLogger[m: Started SareetaApplicationTests in 10.942 seconds (JVM running for 15.182)
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.637 s - in com.example.demo.[1mSareetaApplicationTests[m
+[[1;34mINFO[m] Running com.example.demo.services.[1mCustomUserDetailsServiceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.example.demo.services.[1mCustomUserDetailsServiceTest[m
+[m2024-03-24T11:26:27,864[m [32mINFO  [m[[1;34mThread-3[m] [1;33morg.springframework.scheduling.concurrent.ExecutorConfigurationSupport[m: Shutting down ExecutorService 'applicationTaskExecutor'
+[m2024-03-24T11:26:27,871[m [32mINFO  [m[[1;34mThread-3[m] [1;33morg.springframework.orm.jpa.AbstractEntityManagerFactoryBean[m: Closing JPA EntityManagerFactory for persistence unit 'default'
+[m2024-03-24T11:26:27,879[m [32mINFO  [m[[1;34mThread-3[m] [1;33mcom.zaxxer.hikari.HikariDataSource[m: HikariPool-1 - Shutdown initiated...
+[m2024-03-24T11:26:27,893[m [32mINFO  [m[[1;34mThread-3[m] [1;33mcom.zaxxer.hikari.HikariDataSource[m: HikariPool-1 - Shutdown completed.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 12, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:3.2.2:war[m [1m(default-war)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [auth-course] in [/var/jenkins_home/workspace/Project_4/starter_code/target/auth-course-0.0.1-SNAPSHOT]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Webapp assembled in [276 msecs]
+[[1;34mINFO[m] Building war: /var/jenkins_home/workspace/Project_4/starter_code/target/auth-course-0.0.1-SNAPSHOT.war
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.1.5.RELEASE:repackage[m [1m(repackage)[m @ [36mauth-course[0;1m ---[m
+[[1;34mINFO[m] Replacing main artifact with repackaged archive
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  34.959 s
+[[1;34mINFO[m] Finished at: 2024-03-24T11:26:33Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[DeployPublisher][INFO] Attempting to deploy 1 war file(s)
+[DeployPublisher][INFO] Deploying /var/jenkins_home/workspace/Project_4/starter_code/target/auth-course-0.0.1-SNAPSHOT.war to container Tomcat 9.x Remote with context myApp
+  [/var/jenkins_home/workspace/Project_4/starter_code/target/auth-course-0.0.1-SNAPSHOT.war] is not deployed. Doing a fresh deployment.
+  Deploying [/var/jenkins_home/workspace/Project_4/starter_code/target/auth-course-0.0.1-SNAPSHOT.war]
+Finished: SUCCESS
